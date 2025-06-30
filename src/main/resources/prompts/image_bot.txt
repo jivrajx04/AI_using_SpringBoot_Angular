@@ -1,0 +1,1 @@
+Generate well structured and beautiful image of {description}.
