@@ -42,7 +42,7 @@ private ChatService chatService;
            return response;
     }
 
-    @GetMapping("/cricketbot")
+    @GetMapping("/cricket")
     public ResponseEntity<CricketResponse> getCricketRespnse(
         @RequestParam("inputText") String inputText
     ) throws IOException{
@@ -50,6 +50,7 @@ private ChatService chatService;
         return ResponseEntity.ok(cricketResponse);
     }
 
+    @GetMapping("/images")
     public ResponseEntity<List<String>> generateImages(
         @RequestParam("imageDescription") String imageDesc,
         @RequestParam(value= "numberOfImages", required=false, defaultValue="2") int numbers
