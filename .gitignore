@@ -31,3 +31,48 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# --- Angular Frontend (ai_frontend) Ignores ---
+# These rules were copied from ai_frontend/.gitignore and adjusted for monorepo structure
+
+# Compiled output
+/ai_frontend/dist/
+/ai_frontend/tmp/
+/ai_frontend/out-tsc/
+/ai_frontend/bazel-out/
+
+# Node
+/ai_frontend/node_modules/
+/ai_frontend/npm-debug.log
+/ai_frontend/yarn-error.log
+
+# IDEs and editors (scoped to frontend directory)
+/ai_frontend/.idea/
+/ai_frontend/.project
+/ai_frontend/.classpath
+/ai_frontend/.c9/
+/ai_frontend/*.launch
+/ai_frontend/.settings/
+/ai_frontend/*.sublime-workspace
+
+# Visual Studio Code (scoped to frontend directory)
+/ai_frontend/.vscode/*
+!/ai_frontend/.vscode/settings.json
+!/ai_frontend/.vscode/tasks.json
+!/ai_frontend/.vscode/launch.json
+!/ai_frontend/.vscode/extensions.json
+/ai_frontend/.history/*
+
+# Miscellaneous (scoped to frontend directory)
+/ai_frontend/.angular/cache/
+/ai_frontend/.sass-cache/
+/ai_frontend/connect.lock
+/ai_frontend/coverage/
+/ai_frontend/libpeerconnection.log
+/ai_frontend/testem.log
+/ai_frontend/typings/
+
+# System files (scoped to frontend directory, though .DS_Store and Thumbs.db are often global)
+/ai_frontend/.DS_Store
+/ai_frontend/Thumbs.db
+# --- End Angular Frontend (ai_frontend) Ignores ---
